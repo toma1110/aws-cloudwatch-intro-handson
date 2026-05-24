@@ -11,3 +11,5 @@ CloudWatch入門講座で読むためのLogs Insightsクエリ集です。既存
 | `05_request_dedup.sql` | requestId単位で重複を抑える |
 
 実行前に、対象ロググループと時間範囲を必要最小限に絞ってください。
+
+`dedup` を使う場合、並び順を決める `sort` は `dedup` の前に置きます。`dedup` の後ろには `limit` だけを置く形にしてください。
